@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src = "firebaseConfig.js" defer></script>
+  <script src="main.js" defer></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+  <!-- Add the Firebase Firestore SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+  </style>
+</head>
+
+<body>
+  <div class="apple101">
+    <navbar class="mainbar">
+      <div class="logo1">
+        <img id="appleLogo" src="demologo.png" alt="habit logo">
+      </div>
+      <div id="navLink">
+        <a href="https://www.apple.com/us-edu/store">
+          <p id="home">Home</p>
+        </a>
+        <a href="https://farhanasc23.github.io/demodayprojectaboutuspage/">
+          <p id="about">About Us</p>
+        </a>
+        <a href="https://farhanasc23.github.io/demodayprojectcontactpage/">
+          <p id="contact">Contact</p>
+        </a>
+      </div>
+    </navbar>
+  </div>
+
+
+
+
+
+  <div class="everything">
+    <div class="saveloaduser">
+      <div class="save">
+        <button id="savebtn">Save</button>
+      </div>
+      <div class="load">
+        <button id="loadbtn">Load</button>
+      </div>
+      <div class="usernameinput">
+        <form>
+          <input type="text" placeholder="Password" id="pass">
+        </form>
+      </div>
+    </div>
+    <div class="habittrackercomponents">
+      <div class="timeandform">
+        <div class="timer">
+          <h2 id="timern">Timer</h2>
+        </div>
+        <div class="selectionform">
+          <form action="">
+            <select name="" id="selection">
+              <option value="default">Adequate Rest</option>
+              <option value="weightgain">Weight Gain</option>
+              <option value="weightloss">Weight Loss</option>
+              <option value="anxiety">Anxiety</option>
+            </select>
+            <button id="selectionbtn">Pick</button>
+          </form>
+        </div>
+      </div>
+      <div class="habitscontainerbg">
+        <div class="habitscontainer">
+          <div class="habits">
+            <div class="textandedit">
+              <div class="habitstext">
+                <h2 id="changedhabit">Default Text</h2>
+              </div>
+              <div class="editbutton">
+                <button id="editbtn">Edit</button>
+              </div>
+            </div>
+            <div class="sandc">
+              <div class="habitscore">
+                <h3>Score: </h3>
+                <h3 id="score">0</h3>
+              </div>
+              <div class="checklist">
+                <form>
+                  <input type="checkbox" id="completedaily" name="completedaily">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="habitscontainer2">
+          <div class="habits2">
+            <div class="textandedit2">
+              <div class="habitstext2">
+                <h2 id="changedhabit2">Default Text</h2>
+              </div>
+              <div class="editbutton2">
+                <button id="editbtn2">Edit</button>
+              </div>
+            </div>
+            <div class="sandc2">
+              <div class="habitscore2">
+                <h3>Score: </h3>
+                <h3 id="score2">0</h3>
+              </div>
+              <div class="checklist2">
+                <form>
+                  <input type="checkbox" id="completedaily2" name="completedaily2">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="habitscontainer3">
+          <div class="habits3">
+            <div class="textandedit3">
+              <div class="habitstext3">
+                <h2 id="changedhabit3">Default Text</h2>
+              </div>
+              <div class="editbutton3">
+                <button id="editbtn3">Edit</button>
+              </div>
+            </div>
+            <div class="sandc3">
+              <div class="habitscore3">
+                <h3>Score: </h3>
+                <h3 id="score3">0</h3>
+              </div>
+              <div class="checklist3">
+                <form>
+                  <input type="checkbox" id="completedaily3" name="completedaily3">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="habitscontainer4">
+          <div class="habits4">
+            <div class="textandedit4">
+              <div class="habitstext4">
+                <h2 id="changedhabit4">Default Text</h2>
+              </div>
+              <div class="editbutton4">
+                <button id="editbtn4">Edit</button>
+              </div>
+            </div>
+            <div class="sandc4">
+              <div class="habitscore4">
+                <h3>Score: </h3>
+                <h3 id="score4">0</h3>
+              </div>
+              <div class="checklist4">
+                <form>
+                  <input type="checkbox" id="completedaily4" name="completedaily4">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+<script src="https://habittrac4er-default-rtdb.firebaseio.com/"></script>
+
+<body>
+  <!-- Some other HTML... -->
+  <div id="comments">
+  </div>
+</body>
+
+</html>
